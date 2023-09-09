@@ -1,0 +1,29 @@
+@import '../../styles/_mixins';
+@import '../../styles/_variables';
+
+.footer{
+    background-color:$black ;
+    @include display-settings($flex-direction:column, $align-items:center);
+    padding-top:66px ;
+    padding-bottom:29px ;
+    & img{
+        width: 122px;
+        margin-bottom: 28.56px;
+    }
+    & p {
+        color:$white;
+        text-align: center;
+    }
+}
+
+@include mobile{
+    .footer{
+        padding: 58px 121px;
+        & img{
+            margin-bottom: 5px;
+        }
+        & p{
+            font-size: 12px;
+        }    
+    }
+}

@@ -1,0 +1,26 @@
+@import '../../styles/_mixins';
+@import '../../styles/variables';
+
+.error {
+  @include display-settings($flex-direction: column,$justify-content:space-evenly, $align-items: center);
+  flex-wrap: wrap;
+  gap: 5vh;  
+  min-height:40vh;
+  color: $secondary-color;
+  &_title {
+    font-weight: 700;
+    font-size:14vw;
+  }
+
+  & p {
+    font-size: max(2vw,15px); 
+    text-align: center;
+  }
+
+  & a {
+    color: $secondary-color;
+    font-size: max(1.5vw,12px); 
+  }
+}
+
+  

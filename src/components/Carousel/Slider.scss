@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.slider {
+    @include display-settings($justify-content:center, $align-items:center);
+    position: relative;
+    height: 414px; 
+    overflow: hidden;   
+    &_slide {
+        @include img;
+        border-radius: 25px;  
+    }
+    &_arrow-left{
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+    } 
+    &_arrow-right{
+        position: absolute;
+        cursor: pointer;
+        right: 0;    
+    }
+    &_index{
+        position: absolute;
+        bottom: 24.92px;
+        color:$white;
+        font-size: 18px;
+    }     
+  }
+
+@include mobile{
+  .slider {
+    height: 255px;
+    &_arrow-left,&_arrow-right{
+        width: 24px;    
+    } 
+    &_index{
+        visibility: hidden;    
+    }
+  }     
+}
+  

@@ -1,0 +1,34 @@
+@import '../../styles/_mixins';
+@import '../../styles/_variables';
+
+.home-section{
+  width: 100%;  
+  background-color:$primary-color;
+  @include display-settings($justify-content:space-around, $flex-wrap:wrap);
+  border-radius:25px ;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-top: 6px;
+  padding-bottom: 43px; 
+}
+
+.fake-card {
+  width: 28%;
+  margin-top: 50px;
+  height: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@include mobile{
+  .home-section{
+    flex-direction:column;
+    background-color:$white;
+    padding:0 0 0 0; 
+  }
+  .fake-card {
+    margin-top: 20px;
+    width: 100%;
+    height: 255px;
+  }
+}

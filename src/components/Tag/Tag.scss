@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.tags{
+    @include display-settings($align-items:center);
+    gap: 10px;
+    flex-wrap: wrap;
+    &_name{
+        color: $white;
+        background: $secondary-color;
+        border-radius: 10px;
+        font-size: 14px;
+        list-style-type: none;
+        min-width: 115px;
+        text-align: center;
+        line-height: 22px;
+        padding: 0 15px;
+    }
+}
+
+@include mobile{
+    .tags {
+        &_name {
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.banner, .banner>*{
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 43px;
+    &_container {
+      height: 100%;
+      filter: brightness(0.8);
+      img {
+        @include img;
+      }
+    }
+    &_title {
+      color: $white;
+      font-size: 48px;
+      font-weight: 500;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+}
+
+@include mobile{
+  .banner {
+    height: 111px;
+    margin-bottom: 0;
+      &_title {
+        font-size: 24px;
+        width: 217px;
+        text-align: start;
+        transform: translate(-95%, -50%);
+      }
+  }  
+}
+  

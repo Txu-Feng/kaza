@@ -1,0 +1,74 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.apartement-info{
+    @include display-settings($justify-content:space-between);
+    padding: 24px 0;
+    &_first-container{
+        @include display-settings($flex-direction:column);
+        align-items: flex-start;
+        padding-top: 6px;
+        &_title-location-container{
+            padding-bottom: 21px;
+            color:$secondary-color;
+            & > *{
+                font-weight: 500;
+            } 
+            &_title{
+                font-size: 36px;    
+            }
+            &_location{
+                font-size: 18px;   
+            }
+        } 
+    }
+    &_second-container{
+        align-items: flex-end;
+        padding-bottom: 7px;
+    }
+}
+
+
+.apartement-collapse{
+    @include display-settings($justify-content:space-between);
+        gap: 5%;
+    & ul >li{
+        list-style-type: none; 
+    }
+}
+
+
+
+@include mobile{
+    
+}
+
+@include mobile{
+    .apartement-info{
+        flex-direction: column;
+        padding:15px 0px;
+        &_first-container {
+            padding-top: 0;
+            &_title-location-container{
+                padding-bottom: 10px;
+                &_title{
+                    font-size: 18px;
+                    padding-bottom: 5px;    
+                }
+                &_location{
+                    font-size: 14px;
+                }
+            }
+        }
+        &_second-container {
+            @include display-settings($justify-content: space-between, $align-items:center);
+            padding-bottom: 0;
+            padding-top: 16px;
+            flex-wrap: nowrap;
+        }
+    }
+    .apartement-collapse{
+        flex-direction: column;
+    }
+}
+

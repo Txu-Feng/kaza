@@ -1,0 +1,12 @@
+@import '../../styles/_mixins';
+@import '../../styles/_variables';
+
+.about-section{
+    @include display-settings($flex-direction:column, $align-items:center);
+}
+
+@include mobile{
+    .about-section {
+        margin-top: 30px;
+    }
+}

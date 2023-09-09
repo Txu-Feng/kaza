@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.ratings{
+    white-space: nowrap;
+}
+
+@include mobile{
+    .ratings{
+        img{
+            width: 13.41px;
+            height: 13px;
+        }
+    }
+}
+
