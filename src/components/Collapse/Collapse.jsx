@@ -7,7 +7,7 @@ const Collapse = ({ title, children}) => {
   const [isOpen, setIsOpen] = useState(false); 
 
   const toggleCollapse = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen); 
   };
 
   return (
