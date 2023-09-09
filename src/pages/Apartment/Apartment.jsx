@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './Apartment.scss';
 import data from '../../data/data.json';
-import Slider from '../../components/Carousel/Slider';
+import Slider from '../../components/Slider/Slider';
 import Host from '../../components/Host/Host';
 import Tag from '../../components/Tag/Tag';
 import Rating from '../../components/Rating/Rating';
@@ -16,6 +16,7 @@ export default function Apartment() {
 
   useEffect(() => {
     if (!apartmentData) {
+      //console.log(apartmentData);
       navigate('*');
     }
   }, [apartmentData, navigate]);
