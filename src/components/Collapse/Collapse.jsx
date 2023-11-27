@@ -4,12 +4,15 @@ import ArrowUp from '../../assets/arrow_up.png';
 
 const Collapse = ({ title, children}) => {
   
+  // etat (state)
   const [isOpen, setIsOpen] = useState(false); 
 
+  // comportement ( evenement)
   const toggleCollapse = () => {
     setIsOpen(!isOpen); 
   };
 
+  //affichage (render)
   return (
     <div className='collapse'>
       <div className={`collapse_name ${isOpen ? 'rotate' : ''}`}  onClick={toggleCollapse}>
