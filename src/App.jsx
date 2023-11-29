@@ -9,10 +9,10 @@ import Layout from './components/Layout/Layout';
 function App() {
   return (
   <Routes>
-    <Route path="/kaza" element={<Layout />}>
+    <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path="/kaza/apartment/:id"element={<Apartment />} />
-      <Route path="/kaza/about" element={<About />} />
+      <Route path="/apartment/:id"element={<Apartment />} />
+      <Route path="/about" element={<About />} />
       <Route path="*" element={<Error />} />
     </Route>
   </Routes>
