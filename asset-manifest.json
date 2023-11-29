@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kaza/static/css/main.3b257be9.css",
-    "main.js": "/kaza/static/js/main.0bd527eb.js",
-    "static/media/about_pic.jpg": "/kaza/static/media/about_pic.e54ae93d36cfba861b65.jpg",
-    "static/media/home_pic.jpg": "/kaza/static/media/home_pic.61352a7ae7ebff30e925.jpg",
-    "index.html": "/kaza/index.html",
-    "main.3b257be9.css.map": "/kaza/static/css/main.3b257be9.css.map",
-    "main.0bd527eb.js.map": "/kaza/static/js/main.0bd527eb.js.map"
+    "main.css": "/static/css/main.3b257be9.css",
+    "main.js": "/static/js/main.c8c562c9.js",
+    "static/media/about_pic.jpg": "/static/media/about_pic.e54ae93d36cfba861b65.jpg",
+    "static/media/home_pic.jpg": "/static/media/home_pic.61352a7ae7ebff30e925.jpg",
+    "index.html": "/index.html",
+    "main.3b257be9.css.map": "/static/css/main.3b257be9.css.map",
+    "main.c8c562c9.js.map": "/static/js/main.c8c562c9.js.map"
   },
   "entrypoints": [
     "static/css/main.3b257be9.css",
-    "static/js/main.0bd527eb.js"
+    "static/js/main.c8c562c9.js"
   ]
 }
